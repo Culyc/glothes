@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220305084433">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220313180008">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,7 +94,7 @@
 						</div>
 					</div>
 
-					<div data-showmore='item' class="catalog__row">
+					<div data-showmore-media="1400,min" data-showmore='item' class="catalog__row">
 						<div data-showmore-content="1" class="catalog__content">
 							<div class="catalog__item item">
 								<div class="item__body">
@@ -327,26 +327,246 @@
 								<div class="contacts__item">ОКАТО 45293554001</div>
 								<div class="contacts__item">ОКТМО 45397000001</div>
 							</div>
+
 						</div>
+
 						<div class="contacts__left-column">
-							<form action="" class="contacts__form form">
-								<input required data-required data-validate autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your name" class="formt__input">
-								<input required data-required data-validate autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Your phone" class="formt__input">
-								<input required data-required="email" data-validate autocomplete="off" type="e-mail" name="form[]" data-error="Ошибка" placeholder="Your email" class="formt__input">
-								<textarea required data-required name="" id="" placeholder="Message" class="formt__textarea"></textarea>
+							<form action="" data-error="оши" class="contacts__form form-cont">
+								<label for="" class="form-cont__line">
+									<input required data-validate autocomplete="off" type="text" name="form[]" data-error="оши" placeholder="Your name" class="input ">
+								</label>
+								<label for="" class="form-cont__line">
+									<input required data-validate autocomplete="off" type="tel" name="form[]" data-error="Ошиб" placeholder="Your phone" class="input">
+								</label>
+								<label for="" class="form-cont__line">
+									<input data-required="email" data-validate autocomplete="off" type="e-mail" name="form[]" data-error="Ошибк введите e-mail" placeholder="Your email" class="input">
+								</label>
+
+								<div class="form-cont__line">
+									<textarea data-required data-validate name="" id="" placeholder="Message" class="form-cont__textarea"></textarea>
+								</div>
+
+
+								<div class="form-cont__line"><span></span>
+									<label for="inp" class="form-cont__label"></label>
+									<select placeholder="kuurs" name="form[]" class="form-sel">
+										<option data-placeholder="kuurs" value="1" selected>Пункт №1</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+										<option value="4">Пункт №4</option>
+									</select>
+								</div>
+								<div class="form-cont__line"><span></span>
+									<label for="inp" class="form-cont__label"></label>
+									<select data-scroll placeholder="kuurs" name="form[]" class="form-sel">
+										<option data-placeholder="kuurs" value="1" selected>Пункт №1</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+										<option value="4">Пункт №4</option>
+										<option value="5">Пункт №5</option>
+										<option value="6">Пункт №6</option>
+										<option value="7">Пункт №7</option>
+										<option value="8">Пункт №8</option>
+										<option value="9">Пункт №9</option>
+										<option value="10">Пункт №10</option>
+									</select>
+								</div>
+								<label for="" class="form-cont__line">
+									<input data-calendar type="text" autocomplete="on" name="form[]" placeholder="kalendar" class="input-kalendar">
+								</label>
+
+
+
+
+
+
+
+
 								<button type="submit" class="form__button-btn">send</button>
+
+
 							</form>
 						</div>
 					</div>
 				</div>
 			</section>
-			<div id="map-test" class="page__map map js-map">
+			<div id="map" class="page__map map js-map">
 
 			</div>
+			<!-- <form action="" data-error="оши" class="contacts__form form-cont">
+	<input data-required data-validate autocomplete="off" type="text" name="form[]" data-error="оши"
+		placeholder="Your name" class="input ">
+	<input data-required data-validate autocomplete="off" type="tel" name="form[]" data-error="Ошиб"
+		placeholder="Your phone" class="input">
+	<input data-required="email" data-validate autocomplete="off" type="e-mail" name="form[]"
+		data-error="Ошибк введите e-mail" placeholder="Your email" class="input">
+	<textarea data-required data-validate name="" id="" placeholder="Message" class="formt__textarea"></textarea>
+	<div class="form-cont__line"><span></span>
+		<label for="inp" class="form-cont__label"></label>
+		<select placeholder="kuurs" name="form[]" class="form-cont">
+			<option data-placeholder="kuurs" value="1" selected>Пункт №1</option>
+			<option value="2">Пункт №2</option>
+			<option value="3">Пункт №3</option>
+			<option value="4">Пункт №4</option>
+		</select>
+	</div>
+	<div class="form-cont__line"><span></span>
+		<label for="inp" class="form-cont__label"></label>
+		<select data-scroll placeholder="kuurs" name="form[]" class="form-cont">
+			<option data-placeholder="kuurs" value="1" selected>Пункт №1</option>
+			<option value="2">Пункт №2</option>
+			<option value="3">Пункт №3</option>
+			<option value="4">Пункт №4</option>
+			<option value="5">Пункт №5</option>
+			<option value="6">Пункт №6</option>
+			<option value="7">Пункт №7</option>
+			<option value="8">Пункт №8</option>
+			<option value="9">Пункт №9</option>
+			<option value="10">Пункт №10</option>
+		</select>
+	</div>
+	<label for="" class="form-cont__line">
+		<input data-calendar type="text" name="form[]" placeholder="kalendar" class="input-kalendar">
+	</label>
+
+	<input data-required="email" autocomplete="off" type="e-mail" name="form[]" data-error="Ошибкочка"
+		placeholder="Your email" class="input">
+	<input data-required data-validate autocomplete="off" type="text" name="form[]" data-error="оши"
+		placeholder="Your name" class="input ">
+	<div class="checkbox">
+		<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+		<label for="c_1" class="checkbox__label"><span class="checkbox__text">принимаю условия</span></label>
+	</div>
+	<div class="options">
+		<div class="options__item">
+			<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
+			<label for="o_1" class="options__label"><span class="options__text">text 1 </span></label>
+		</div>
+		<div class="options__item">
+			<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+			<label for="o_2" class="options__label"><span class="options__text">Текст 2</span></label>
+		</div>
+	</div>
+	<div class="rating rating_set">
+		<div class="rating__body">
+			<div class="rating__active"></div>
+			<div class="rating__items">
+				<input type="radio" class="rating__item" value="1" name="rating">
+				<input type="radio" class="rating__item" value="2" name="rating">
+				<input type="radio" class="rating__item" value="3" name="rating">
+				<input type="radio" class="rating__item" value="4" name="rating">
+				<input type="radio" class="rating__item" value="5" name="rating">
+			</div>
+		</div>
+		<div class="rating__value">3.6</div>
+	</div>
+	<div data-range class="form-cont__body">
+		<div class="form-cont__inputs">
+			<input data-range-from type="text" value="500" name="form[]" class="form-cont__input">
+			<input data-range-to type="text" value="1000" name="form[]" class="form-cont__input">
+
+		</div>
+		<div data-range-item class="form-cont__range"></div>
+	</div>
+
+	<div class="quantity">
+		<div class="quantity__button quantity__button_plus _icon-plus">
+
+		</div>
+		<div class="quantity__input">
+			<input autocomplete="off" type="text" name="form[]" value="1">
+		</div>
+		<div class="quantity__button quantity__button_minus _icon-minus"></div>
+	</div>
+
+	<button type="submit" class="form__button-btn">send</button>
+
+
+</form>
+<div class="form-two__search search">
+	<button type="submit" class="search__button _icon-search"></button>
+	<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поиск" class="search__input">
+</div> -->
 		</main>
 		<footer class="footer">
-			<div class="footer__top">
+			<div class="footer__container">
+				<div class="footer__top footer-top">
+					<div class="footer-top__row">
+						<div class="footer-top__social">
 
+							<div class="footer-top__top">
+								<div class="footer-top__subtitles">Consequat orci, risus</div>
+								<div class="footer-top__text">
+									<p>Nulla tellus diam ornare id purus et nisi facilisis nec. Orci nullam ornare quisque mollis
+										sollicitudin. Ante risus
+										lorem pellentesque orci.</p>
+
+								</div>
+							</div>
+							<div class="footer-top__bottom">
+								<div class="footer-top__text">
+									<p>Join the community</p>
+								</div>
+								<div class="footer-top__icons">
+									<a href="" class="footer-top__icon"><img src="img/footer/01.svg" alt=""></a>
+									<a href="" class="footer-top__icon"><img src="img/footer/02.svg" alt=""></a>
+									<a href="" class="footer-top__icon"><img src="img/footer/03.svg" alt=""></a>
+									<a href="" class="footer-top__icon"><img src="img/footer/04.svg" alt=""></a>
+									<a href="" class="footer-top__icon"><img src="img/footer/05.svg" alt=""></a>
+									<a href="" class="footer-top__icon"><img src="img/footer/06.svg" alt=""></a>
+								</div>
+							</div>
+
+						</div>
+						<div class="footer-top__links">
+							<div class="footer-top__column">
+								<div class="footer-top__subtitles">Marketplace</div>
+								<ul class="footer-top__list">
+									<li class="footer-top__item"><a href="" class="footer-top__link">Shop</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">About</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">Gallery</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">Contact</a></li>
+								</ul>
+							</div>
+							<div class="footer-top__column">
+								<div class="footer-top__subtitles">Resource</div>
+								<ul class="footer-top__list">
+									<li class="footer-top__item"><a href="" class="footer-top__link">Shop</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">About</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">Gallery</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">Contact</a></li>
+								</ul>
+							</div>
+							<div class="footer-top__column">
+								<div class="footer-top__subtitles">My Account</div>
+								<ul class="footer-top__list">
+									<li class="footer-top__item"><a href="" class="footer-top__link">Shop</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">About</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">Gallery</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">Contact</a></li>
+								</ul>
+							</div>
+							<div class="footer-top__column">
+								<div class="footer-top__subtitles">Company</div>
+								<ul class="footer-top__list">
+									<li class="footer-top__item"><a href="" class="footer-top__link">Shop</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">About</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">Gallery</a></li>
+									<li class="footer-top__item"><a href="" class="footer-top__link">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom footer-bottom">
+					<div class="footer-bottom__right">
+						<p>Copyright ® 2021</p>
+					</div>
+					<div class="footer-bottom__left">
+						<p>Policy</p>
+						<p>Security</p>
+					</div>
+				</div>
 			</div>
 		</footer>
 	</div>
@@ -362,11 +582,13 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220305084433"></script>
-	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?_v=20220305084433"></script> -->
-	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ&_v=20220305084433>" type="text/javascript"></script> -->
-	<!-- <script src="icon_customImage.js?_v=20220305084433" type="text/javascript"></script> -->
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ&_v=20220305084433>"></script>
+	<script src="js/app.min.js?_v=20220313180008"></script>
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ&_v=20220313180008>" type="text/javascript"></script> -->
+	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?_v=20220313180008"></script> -->
+	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?_v=20220313180008"></script> -->
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ&_v=20220313180008>" type="text/javascript"></script>
+	<!-- <script src="icon_customImage.js?_v=20220313180008" type="text/javascript"></script> -->
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ&_v=20220313180008>"></script>  -->
 
 </body>
 
